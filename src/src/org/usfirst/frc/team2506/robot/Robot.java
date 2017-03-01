@@ -44,6 +44,7 @@ public class Robot extends IterativeRobot {
 	//private Winch winch = new Winch(PortConstants.PORT_WINCH);
 	private Intake intake = new Intake(PortConstants.PORT_INTAKE);
 	//private Shooter shooter = new Shooter(PortConstants.PORT_SHOOTER_SHOOTER, PortConstants.PORT_SHOOTER_HOPPER);
+	//BadShooter is for a shooter without encoder control
 	private BadShooter shooter = new BadShooter(PortConstants.PORT_SHOOTER_SHOOTER, PortConstants.PORT_SHOOTER_HOPPER);
 	private ADXRS450_Gyro gyro = new ADXRS450_Gyro();
 	private GyroUtils gyroUtils = new GyroUtils(gyro, swerveDrive);
